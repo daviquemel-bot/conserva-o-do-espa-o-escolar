@@ -13,9 +13,10 @@
             margin: 0;
             padding: 0;
             line-height: 1.8;
+            -webkit-tap-highlight-color: transparent;
         }
 
-        /* Cabeçalho Top com Degradê */
+        /* Cabeçalho com Degradê */
         header {
             background: linear-gradient(135deg, #0f121d 0%, #070913 100%);
             border-bottom: 4px solid #0066ff;
@@ -40,10 +41,12 @@
             margin: 15px auto 0 auto;
         }
 
-        /* Container Principal */
+        /* Container Principal Adaptável */
         .container {
+            width: 100%;
             max-width: 900px;
             margin: 40px auto;
+            box-sizing: border-box;
             padding: 0 20px;
         }
 
@@ -58,6 +61,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            flex-wrap: wrap;
         }
 
         /* Textos explicativos */
@@ -73,7 +77,7 @@
             font-weight: bold;
         }
 
-        /* Destaque Bonito para Frases */
+        /* Destaque para Frases */
         blockquote {
             background: rgba(0, 102, 255, 0.08);
             border-left: 4px solid #00b3ff;
@@ -119,14 +123,20 @@
             font-size: 1.2rem;
         }
 
-        /* Tabela Escola: O que rola vs O que não rola */
+        /* Responsividade para Tabelas (Container de Rolagem) */
+        .tabela-responsiva {
+            width: 100%;
+            overflow-x: auto;
+            margin: 40px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 40px 0;
             background-color: #0f1322;
-            border-radius: 10px;
-            overflow: hidden;
+            min-width: 500px; /* Garante que não esmague em telas mini */
         }
 
         th, td {
@@ -157,6 +167,7 @@
 
         .img-escola {
             width: 100%;
+            height: auto;
             max-height: 400px;
             object-fit: cover;
             border-radius: 12px;
@@ -179,6 +190,7 @@
             border-radius: 12px;
             padding: 30px;
             margin: 40px 0;
+            box-sizing: border-box;
         }
 
         .painel-desafio h3 {
@@ -189,16 +201,18 @@
 
         .card-opcao {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             margin-bottom: 15px;
             cursor: pointer;
             font-size: 1.1rem;
         }
 
         .card-opcao input {
+            margin-top: 5px;
             margin-right: 12px;
             width: 18px;
             height: 18px;
+            flex-shrink: 0;
             accent-color: #00b3ff;
             cursor: pointer;
         }
@@ -249,6 +263,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 15px;
         }
 
         .faq-btn::after {
@@ -256,6 +271,7 @@
             font-size: 0.8rem;
             color: #00e5ff;
             transition: transform 0.2s;
+            flex-shrink: 0;
         }
 
         .faq-box.aberto .faq-btn::after {
@@ -286,6 +302,33 @@
             border-top: 3px solid #0044ff;
             color: #64748b;
         }
+
+        /* REGRA DE RESPONSIVIDADE (Telas menores/Celulares) */
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 15px;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            p, ul li, .card-opcao, .faq-btn, .faq-content {
+                font-size: 1rem;
+            }
+
+            .painel-desafio {
+                padding: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -298,7 +341,7 @@
     <div class="container">
         
         <h2>🏫 1. A Escola é Nossa Segunda Casa</h2>
-        <p>Vamos mandar a real: a gente passa boa parte da semana dentro da escola. É aqui que a gente troca ideia, aprende coisas novas, passa de ano (com muito esforço!) e constrói amizades pro resto da vida. Por isso, cuidar das salas, do pátio e dos laboratórios não é só "regra da diretoria", é uma <span class="tag-azul">atitude de respeito</span> com nós mesmos e com todo mundo que estuda e trabalha aqui.</p>
+        <p>Vamos mandar a real: a gente passa boa parte da semana dentro da escola. É aqui que a gente troca ideia, aprende coisas novas, passa de ano (com muito esforço!) e constrói amizades pro resto da vida. Por isso, cuidar das salas, do pátio e dos laboratórios não é só "regra da diretoria", é uma <span class="tag-azul">atitude de respeito</span> por nós mesmos e por todo mundo que estuda e trabalha aqui.</p>
         
         <p>Uma escola com carteiras riscadas, lixo jogado no chão ou banheiros zoados quebra totalmente o clima e atrapalha a nossa própria concentração. Quando a galera se une para manter tudo organizado e limpo, o ambiente fica muito mais leve e produtivo para todo mundo.</p>
 
@@ -312,7 +355,7 @@
         </blockquote>
 
         <h2>🤝 2. Mandamentos da Boa Convivência</h2>
-        <p>Viver em grupo exige jogo de cintura. Para que o dia a dia role sem tretas desnecessárias, liga só nesses pontos fundamentais:</p>
+        <p>Viver em grupo exige jogo de cintura. Para que o dia a dia role sem tretas desnecessárias, liga só nestes pontos fundamentais:</p>
 
         <ul>
             <li>
@@ -338,7 +381,7 @@
             <p>Marque as atitudes que você já pratica ou vai começar a praticar hoje:</p>
             
             <label class="card-opcao">
-                <input type="checkbox" class="check-meta"> Jogo meu lixo na lixeira certa (e separo o que dá pra reciclar).
+                <input type="checkbox" class="check-meta"> Jogo meu lixo na lixeira certa (e separo o que dá para reciclar).
             </label>
             <label class="card-opcao">
                 <input type="checkbox" class="check-meta"> Não picho paredes e mantenho as carteiras limpas.
@@ -360,30 +403,32 @@
         </div>
 
         <h2>📊 3. Manda Bem vs. Manda Mal</h2>
-        <p>Dá uma olhada rápida no placar da conduta ideal para não vacilar no dia a dia da nossa escola:</p>
+        <p>Dá uma olhada rápida no placar da conduta ideal para não vacilar no dia a dia da nossa escola (deslize para os lados se estiver no celular):</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>👍 Manda Bem (Faça!)</th>
-                    <th>👎 Manda Mal (Evite!)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Usar os papéis e lixeiras da forma certa.</td>
-                    <td>Colar chiclete embaixo da mesa ou jogar papel no chão.</td>
-                </tr>
-                <tr>
-                    <td>Falar em um tom de voz tranquilo nos corredores.</td>
-                    <td>Gritar e fazer algazarra perto de quem está estudando.</td>
-                </tr>
-                <tr>
-                    <td>Avisar a coordenação se ver algo quebrado.</td>
-                    <td>Quebrar ou chutar portas, banheiros e cadeiras.</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="tabela-responsiva">
+            <table>
+                <thead>
+                    <tr>
+                        <th>👍 Manda Bem (Faça!)</th>
+                        <th>👎 Manda Mal (Evite!)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usar os papéis e lixeiras da forma certa.</td>
+                        <td>Colar chiclete embaixo da mesa ou jogar papel no chão.</td>
+                    </tr>
+                    <tr>
+                        <td>Falar em um tom de voz tranquilo nos corredores.</td>
+                        <td>Gritar e fazer algazarra perto de quem está estudando.</td>
+                    </tr>
+                    <tr>
+                        <td>Avisar a coordenação se vir algo quebrado.</td>
+                        <td>Quebrar ou chutar portas, banheiros e cadeiras.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <div class="bloco-imagem">
             <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200" alt="Alunos estudando juntos" class="img-escola">
@@ -391,14 +436,14 @@
         </div>
 
         <h2>🌍 4. Sustentabilidade e o Nosso Bolso</h2>
-        <p>Cuidar da energia e da água da escola também é sustentabilidade! Sabia que quanto menos a escola gasta consertando coisas depredadas ou pagando contas absurdas de luz (porque deixaram o ar-condicionado ligado na sala vazia), mais sobra dinheiro para investir em novos computadores, Wi-Fi melhor, materiais esportivos e eventos legais para os alunos? Pensar no coletivo é inteligente!</p>
+        <p>Cuidar da energia e da água da escola também é sustentabilidade! Sabia que, quanto menos a escola gasta consertando coisas depredadas ou pagando contas absurdas de luz (porque deixaram o ar-condicionado ligado na sala vazia), mais sobra dinheiro para investir em novos computadores, Wi-Fi melhor, materiais esportivos e eventos legais para os alunos? Pensar no coletivo é inteligente!</p>
 
         <h2>💬 5. Tira-Dúvidas Rápido (FAQ)</h2>
         
         <div class="faq-box">
             <button class="faq-btn">Vi alguém quebrando uma mesa de propósito. E agora?</button>
             <div class="faq-content">
-                <p>Avisa um inspetor ou coordenador na encolha. Defender o patrimônio não é ser "X9", é garantir que você e seus amigos não fiquem sem mesa para estudar no dia seguinte.</p>
+                <p>Avisa um inspetor ou coordenador de boa. Defender o patrimônio não é ser "X9", é garantir que você e seus amigos não fiquem sem mesa para estudar no dia seguinte.</p>
             </div>
         </div>
 
@@ -431,7 +476,6 @@
                 const box = btn.parentElement;
                 const conteudo = box.querySelector('.faq-content');
                 
-                // Fecha as outras caixas para ficar limpo
                 document.querySelectorAll('.faq-box').forEach(outraBox => {
                     if (outraBox !== box) {
                         outraBox.classList.remove('aberto');
@@ -439,7 +483,6 @@
                     }
                 });
 
-                // Abre ou fecha a atual
                 box.classList.toggle('aberto');
                 if (box.classList.contains('aberto')) {
                     conteudo.style.maxHeight = conteudo.scrollHeight + "px";
