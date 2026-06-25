@@ -3,146 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual Interativo: Convivência e Conservação Escolar</title>
+    <title>Convivência e Conservação Escolar 🚀</title>
     <style>
-        /* Configurações Globais - Fundo Preto Moderno e Fontes */
+        /* Configurações Globais - Fundo Preto e Detalhes em Azul */
         body {
             background-color: #060709;
             color: #e2e8f0;
-            font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.9;
+            line-height: 1.8;
         }
 
-        /* Cabeçalho de Grande Impacto */
+        /* Cabeçalho Top com Degradê */
         header {
             background: linear-gradient(135deg, #0f121d 0%, #070913 100%);
             border-bottom: 4px solid #0066ff;
-            padding: 80px 20px;
+            padding: 60px 20px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.15);
+            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
         }
 
         header h1 {
             color: #00b3ff;
-            font-size: 3.2rem;
+            font-size: 2.8rem;
             margin: 0;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 0 0 20px rgba(0, 179, 255, 0.4);
+            letter-spacing: 2px;
+            text-shadow: 0 0 15px rgba(0, 179, 255, 0.5);
         }
 
         header p {
             color: #8a99ad;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             max-width: 700px;
-            margin: 20px auto 0 auto;
-            text-align: center;
+            margin: 15px auto 0 auto;
         }
 
-        /* Container de Conteúdo Expandido */
+        /* Container Principal */
         .container {
-            max-width: 1000px;
-            margin: 60px auto;
-            padding: 0 30px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        /* Títulos Principais e Secundários */
+        /* Títulos com Ícones e Barra Azul */
         h2 {
             color: #00b3ff;
-            font-size: 2.3rem;
-            border-left: 6px solid #0044ff;
-            padding-left: 20px;
-            margin-top: 60px;
-            margin-bottom: 25px;
-            letter-spacing: 1px;
+            font-size: 2rem;
+            border-left: 5px solid #0044ff;
+            padding-left: 15px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
-        /* Parágrafos Grandes e Densos */
+        /* Textos explicativos */
         p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: #cbd5e1;
             text-align: justify;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
-        .destaque {
+        .tag-azul {
             color: #00e5ff;
-            font-weight: 600;
+            font-weight: bold;
         }
 
-        /* Bloco de Citação / Manifesto */
+        /* Destaque Bonito para Frases */
         blockquote {
-            background: rgba(0, 102, 255, 0.05);
+            background: rgba(0, 102, 255, 0.08);
             border-left: 4px solid #00b3ff;
-            margin: 40px 0;
-            padding: 30px;
-            border-radius: 0 12px 12px 0;
+            margin: 30px 0;
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
         }
 
         blockquote p {
             font-style: italic;
             color: #94a3b8;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin: 0;
         }
 
-        /* Listas e Tópicos Customizados */
+        /* Caixas de Tópicos (Cards) */
         ul {
             list-style: none;
             padding: 0;
-            margin: 35px 0;
+            margin: 30px 0;
         }
 
         ul li {
             background-color: #0f1322;
-            margin-bottom: 20px;
-            padding: 25px;
+            margin-bottom: 15px;
+            padding: 20px;
             border-radius: 10px;
             border-left: 5px solid #00b3ff;
-            font-size: 1.15rem;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease;
         }
 
         ul li:hover {
-            transform: translateY(-3px);
+            transform: translateX(5px);
             background-color: #141a30;
-            box-shadow: 0 10px 20px rgba(0, 179, 255, 0.15);
         }
 
         ul li strong {
             color: #00e5ff;
             display: block;
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            font-size: 1.2rem;
         }
 
-        /* Tabela de Diretrizes */
+        /* Tabela Escola: O que rola vs O que não rola */
         table {
             width: 100%;
             border-collapse: collapse;
-            margin: 45px 0;
+            margin: 40px 0;
             background-color: #0f1322;
-            border-radius: 12px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
         }
 
         th, td {
-            padding: 18px 22px;
+            padding: 15px 20px;
             text-align: left;
         }
 
         th {
             background-color: #0044ff;
             color: #ffffff;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
         }
 
         tr {
@@ -153,326 +149,325 @@
             background-color: #13192e;
         }
 
-        /* Imagens Corrigidas com Proporção e Brilho */
-        .container-imagem {
-            margin: 50px 0;
+        /* Imagens Ajustadas e com Brilho Azul */
+        .bloco-imagem {
+            margin: 40px 0;
             text-align: center;
         }
 
-        .imagem-responsiva {
+        .img-escola {
             width: 100%;
-            max-height: 480px;
+            max-height: 400px;
             object-fit: cover;
-            border-radius: 14px;
+            border-radius: 12px;
             border: 2px solid #0044ff;
-            box-shadow: 0 0 30px rgba(0, 102, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 102, 255, 0.3);
         }
 
-        .legenda-imagem {
+        .legenda {
             display: block;
-            margin-top: 15px;
+            margin-top: 10px;
             color: #64748b;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             font-style: italic;
         }
 
-        /* NOVA SEÇÃO INTERATIVA: Painel de Compromisso */
-        .painel-interativo {
+        /* JOGO/INTERAÇÃO: Checklist de Atitude */
+        .painel-desafio {
             background: linear-gradient(135deg, #0f1322 0%, #0b0e1a 100%);
             border: 2px solid #0044ff;
-            border-radius: 14px;
-            padding: 35px;
-            margin: 50px 0;
-            box-shadow: 0 0 25px rgba(0, 68, 255, 0.2);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
         }
 
-        .painel-interativo h3 {
+        .painel-desafio h3 {
             color: #00e5ff;
             margin-top: 0;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
 
-        .item-checklist {
+        .card-opcao {
             display: flex;
             align-items: center;
-            margin-bottom: 18px;
+            margin-bottom: 15px;
             cursor: pointer;
             font-size: 1.1rem;
-            color: #cbd5e1;
         }
 
-        .item-checklist input {
-            margin-right: 15px;
-            width: 20px;
-            height: 20px;
-            accent-color: #00b3ff; /* Cor azul no checkbox */
+        .card-opcao input {
+            margin-right: 12px;
+            width: 18px;
+            height: 18px;
+            accent-color: #00b3ff;
             cursor: pointer;
         }
 
-        .barra-progresso-container {
+        .bg-progresso {
             background-color: #1e293b;
-            border-radius: 10px;
-            height: 20px;
+            border-radius: 8px;
+            height: 15px;
             width: 100%;
-            margin-top: 25px;
+            margin-top: 20px;
             overflow: hidden;
         }
 
-        .barra-progresso {
+        .barra-azul {
             background: linear-gradient(90deg, #0044ff, #00e5ff);
             height: 100%;
             width: 0%;
-            transition: width 0.4s ease;
-            box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+            transition: width 0.3s ease;
         }
 
-        #texto-progresso {
+        #status-texto {
             display: block;
-            margin-top: 10px;
+            margin-top: 8px;
             font-weight: bold;
             color: #00b3ff;
             text-align: right;
         }
 
-        /* INTERAÇÃO FAQ: Acordeon Expandível */
-        .faq-item {
+        /* INTERAÇÃO: FAQ Sanfona */
+        .faq-box {
             background-color: #0b0e1a;
             border: 1px solid #1e293b;
-            border-radius: 10px;
-            margin-bottom: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
             overflow: hidden;
         }
 
-        .faq-pergunta {
+        .faq-btn {
             background-color: #0f1322;
-            padding: 22px;
+            padding: 20px;
             width: 100%;
             text-align: left;
             border: none;
             color: #00b3ff;
-            font-size: 1.25rem;
+            font-size: 1.15rem;
             font-weight: bold;
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            transition: background-color 0.3s;
         }
 
-        .faq-pergunta:hover {
-            background-color: #141a30;
-        }
-
-        .faq-pergunta::after {
+        .faq-btn::after {
             content: '▼';
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: #00e5ff;
-            transition: transform 0.3s ease;
+            transition: transform 0.2s;
         }
 
-        .faq-item.ativo .faq-pergunta::after {
+        .faq-box.aberto .faq-btn::after {
             transform: rotate(-180deg);
         }
 
-        .faq-resposta {
+        .faq-content {
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.3s ease-out, padding 0.3s ease;
-            padding: 0 22px;
+            transition: max-height 0.2s ease-out;
+            padding: 0 20px;
             color: #94a3b8;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             background-color: #070913;
         }
 
-        .faq-item.ativo .faq-resposta {
-            padding: 22px;
+        .faq-box.aberto .faq-content {
+            padding: 20px;
             border-top: 1px solid #1e293b;
         }
 
-        /* Rodapé Robusto */
+        /* Rodapé */
         footer {
             background-color: #070913;
             text-align: center;
-            padding: 40px 20px;
-            margin-top: 100px;
+            padding: 30px 20px;
+            margin-top: 80px;
             border-top: 3px solid #0044ff;
             color: #64748b;
-            font-size: 1rem;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Compromisso Coletivo</h1>
-        <p>Diretrizes de Convivência Harmoniosa e Conservação Ativa do Nosso Ecossistema Escolar</p>
+        <h1>Tamo Junto na Escola! 🚀</h1>
+        <p>O guia definitivo para mandar bem na convivência e cuidar do nosso espaço todos os dias.</p>
     </header>
 
     <div class="container">
         
-        <h2>1. Introdução: A Escola como Extensão Democrática</h2>
-        <p>A instituição escolar ultrapassa os limites físicos de suas estruturas de concreto e tijolos; ela se consolida como o espaço fundamental de formação cidadã, socialização e crescimento intelectual. Cada corredor, laboratório, pátio e sala de aula representa um patrimônio compartilhado que pertence a gerações presentes e futuras. Manter este ambiente preservado, limpo e acolhedor não é uma tarefa restrita aos profissionais da manutenção, mas sim um <span class="destaque">dever ético e civilizatório</span> de cada indivíduo que circula por este espaço diariamente.</p>
+        <h2>🏫 1. A Escola é Nossa Segunda Casa</h2>
+        <p>Vamos mandar a real: a gente passa boa parte da semana dentro da escola. É aqui que a gente troca ideia, aprende coisas novas, passa de ano (com muito esforço!) e constrói amizades pro resto da vida. Por isso, cuidar das salas, do pátio e dos laboratórios não é só "regra da diretoria", é uma <span class="tag-azul">atitude de respeito</span> com nós mesmos e com todo mundo que estuda e trabalha aqui.</p>
+        
+        <p>Uma escola com carteiras riscadas, lixo jogado no chão ou banheiros zoados quebra totalmente o clima e atrapalha a nossa própria concentração. Quando a galera se une para manter tudo organizado e limpo, o ambiente fica muito mais leve e produtivo para todo mundo.</p>
 
-        <div class="container-imagem">
-            <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1200" alt="Corredor escolar moderno" class="imagem-responsiva">
-            <span class="legenda-imagem">Estruturas preservadas geram um ambiente propício para a concentração e o desenvolvimento intelectual.</span>
+        <div class="bloco-imagem">
+            <img src="https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1200" alt="Corredor da escola limpo" class="img-escola">
+            <span class="legenda">💡 Um colégio bem cuidado faz a rotina e os estudos renderem muito mais!</span>
         </div>
 
         <blockquote>
-            <p>"A educação não se restringe aos livros de texto; ela se manifesta na forma como cuidamos do chão que pisamos e no respeito com que tratamos aqueles que compartilham a jornada conosco."</p>
+            <p>"Respeitar o espaço coletivo mostra quem você é fora das redes sociais. Cidadania se pratica no mundo real."</p>
         </blockquote>
 
-        <h2>2. Código de Convivência: Pilares para o Respeito Mútuo</h2>
-        <p>Para construir uma comunidade verdadeiramente inclusiva e produtiva, estabelecemos diretrizes claras que norteiam as interações cotidianas. O foco principal é a erradicação de condutas individualistas em prol do bem-estar comum.</p>
+        <h2>🤝 2. Mandamentos da Boa Convivência</h2>
+        <p>Viver em grupo exige jogo de cintura. Para que o dia a dia role sem tretas desnecessárias, liga só nesses pontos fundamentais:</p>
 
         <ul>
             <li>
-                <strong>I. Dignidade Humana e Diversidade</strong>
-                É dever intransigente de todos respeitar as diferenças étnicas, de gênero, orientação, crenças religiosas e condições socioeconômicas. Manifestações de bullying serão severamente punidas.
+                <strong>🌈 I. Respeito à Diversidade e Zero Bullying</strong>
+                Aqui todo mundo tem o direito de ser quem é. Respeitar as diferenças de estilo, gênero, cor, religião e opinião é o mínimo. Piadinhas preconceituosas ou exclusão não têm espaço aqui.
             </li>
             <li>
-                <strong>II. Cultura de Escuta e Diálogo</strong>
-                A discordância de opiniões acadêmicas deve ser estimulada, desde que expressa de forma verbalmente pacífica, sem interrupções agressivas ou gritos.
+                <strong>🗣️ II. Diálogo em Vez de Treta</strong>
+                Discordar de alguém na sala de aula é normal e saudável. Mas o debate tem que ser na moral, ouvindo o outro lado sem gritar, xingar ou interromper a galera.
             </li>
             <li>
-                <strong>III. Disciplina Tecnológica e Foco</strong>
-                Os aparelhos celulares e eletrônicos pessoais devem permanecer em modo silencioso e guardados durante os períodos de instrução direta.
+                <strong>📱 III. Celular na Hora Certa</strong>
+                Rede social, jogos e vídeos são legais, mas na hora da explicação do professor, deixa o celular guardado ou no silencioso. Focar na aula evita que você precise recuperar nota no final do bimestre.
+            </li>
+            <li>
+                <strong>⏰ IV. Chegar na Hora Rola Mais</strong>
+                Chegar atrasado corta o raciocínio do professor e atrapalha os colegas que já começaram a atividade. Ter responsabilidade com os horários faz parte do jogo.
             </li>
         </ul>
 
-        <div class="painel-interativo">
-            <h3>Faça o seu Pacto de Cidadania Escolar</h3>
-            <p>Selecione abaixo as atitudes que você se compromete a adotar a partir de hoje para melhorar o nosso colégio:</p>
+        <div class="painel-desafio">
+            <h3>✅ Desafio: Você é um estudante Nota 10?</h3>
+            <p>Marque as atitudes que você já pratica ou vai começar a praticar hoje:</p>
             
-            <label class="item-checklist">
-                <input type="checkbox" class="compromisso-check"> Vou jogar todo o meu lixo na lixeira correta e reciclar quando possível.
+            <label class="card-opcao">
+                <input type="checkbox" class="check-meta"> Jogo meu lixo na lixeira certa (e separo o que dá pra reciclar).
             </label>
-            <label class="item-checklist">
-                <input type="checkbox" class="compromisso-check"> Não vou riscar carteiras, cadeiras ou pichar nenhuma parede.
+            <label class="card-opcao">
+                <input type="checkbox" class="check-meta"> Não picho paredes e mantenho as carteiras limpas.
             </label>
-            <label class="item-checklist">
-                <input type="checkbox" class="compromisso-check"> Manterei meu celular guardado durante as explicações dos professores.
+            <label class="card-opcao">
+                <input type="checkbox" class="check-meta"> Guardo o celular quando o professor começa a explicar.
             </label>
-            <label class="item-checklist">
-                <input type="checkbox" class="compromisso-check"> Tratarei funcionários e colegas com total respeito e educação.
+            <label class="card-opcao">
+                <input type="checkbox" class="check-meta"> Trato os funcionários da limpeza e da cantina com a maior educação.
             </label>
-            <label class="item-checklist">
-                <input type="checkbox" class="compromisso-check"> Desligarei as luzes e o ar-condicionado se eu for o último a sair da sala.
+            <label class="card-opcao">
+                <input type="checkbox" class="check-meta"> Ajudo a economizar energia apagando as luzes ao sair da sala vazia.
             </label>
 
-            <div class="barra-progresso-container">
-                <div class="barra-progresso" id="barra-progresso"></div>
+            <div class="bg-progresso">
+                <div class="barra-azul" id="progresso-atual"></div>
             </div>
-            <span id="texto-progresso">0% Concluído</span>
+            <span id="status-texto">0% Pronto</span>
         </div>
 
-        <h2>3. Guia Prático de Conduta Escolar</h2>
+        <h2>📊 3. Manda Bem vs. Manda Mal</h2>
+        <p>Dá uma olhada rápida no placar da conduta ideal para não vacilar no dia a dia da nossa escola:</p>
+
         <table>
             <thead>
                 <tr>
-                    <th>Prática Recomendada</th>
-                    <th>Prática Proibida</th>
+                    <th>👍 Manda Bem (Faça!)</th>
+                    <th>👎 Manda Mal (Evite!)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Descartar resíduos orgânicos e recicláveis nas lixeiras corretas.</td>
-                    <td>Deixar embalagens ou papéis sob as carteiras e pátios.</td>
+                    <td>Usar os papéis e lixeiras da forma certa.</td>
+                    <td>Colar chiclete embaixo da mesa ou jogar papel no chão.</td>
                 </tr>
                 <tr>
-                    <td>Utilizar tom de voz moderado em corredores e pátios internos.</td>
-                    <td>Gritar, correr tumultuadamente ou perturbar salas adjacentes.</td>
+                    <td>Falar em um tom de voz tranquilo nos corredores.</td>
+                    <td>Gritar e fazer algazarra perto de quem está estudando.</td>
                 </tr>
                 <tr>
-                    <td>Comunicar imediatamente a coordenação sobre danos estruturais.</td>
-                    <td>Riscar carteiras, pichar paredes ou depredar banheiros.</td>
+                    <td>Avisar a coordenação se ver algo quebrado.</td>
+                    <td>Quebrar ou chutar portas, banheiros e cadeiras.</td>
                 </tr>
             </tbody>
         </table>
 
-        <div class="container-imagem">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200" alt="Estudantes trabalhando em equipe" class="imagem-responsiva">
-            <span class="legenda-imagem">Trabalho em equipe e cooperação são as chaves para a manutenção de um ambiente saudável.</span>
+        <div class="bloco-imagem">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200" alt="Alunos estudando juntos" class="img-escola">
+            <span class="legenda">🤝 Fortalecer o grupo deixa todo mundo mais perto do sucesso!</span>
         </div>
 
-        <h2>4. Perguntas Frequentes (FAQ)</h2>
+        <h2>🌍 4. Sustentabilidade e o Nosso Bolso</h2>
+        <p>Cuidar da energia e da água da escola também é sustentabilidade! Sabia que quanto menos a escola gasta consertando coisas depredadas ou pagando contas absurdas de luz (porque deixaram o ar-condicionado ligado na sala vazia), mais sobra dinheiro para investir em novos computadores, Wi-Fi melhor, materiais esportivos e eventos legais para os alunos? Pensar no coletivo é inteligente!</p>
+
+        <h2>💬 5. Tira-Dúvidas Rápido (FAQ)</h2>
         
-        <div class="faq-item">
-            <button class="faq-pergunta">O que fazer se eu presenciar alguém danificando o patrimônio?</button>
-            <div class="faq-resposta">
-                <p>Você deve reportar o ocorrido imediatamente à inspetoria ou à coordenação. A denúncia não é um ato de rivalidade, mas de proteção de um patrimônio que também custeia o seu próprio aprendizado.</p>
+        <div class="faq-box">
+            <button class="faq-btn">Vi alguém quebrando uma mesa de propósito. E agora?</button>
+            <div class="faq-content">
+                <p>Avisa um inspetor ou coordenador na encolha. Defender o patrimônio não é ser "X9", é garantir que você e seus amigos não fiquem sem mesa para estudar no dia seguinte.</p>
             </div>
         </div>
 
-        <div class="faq-item">
-            <button class="faq-pergunta">Quais são as consequências para o desrespeito às regras?</button>
-            <div class="faq-resposta">
-                <p>As sanções variam desde advertências verbais e escritas até suspensões temporárias e a obrigatoriedade de reparação financeira ou comunitária do dano causado, conforme o Regimento Interno.</p>
+        <div class="faq-box">
+            <button class="faq-btn">O que acontece se eu descumprir as regras?</button>
+            <div class="faq-content">
+                <p>O Regimento da escola prevê desde uma conversa com a coordenação, advertência escrita enviada aos pais, suspensão e, dependendo do caso, ter que arcar com o prejuízo financeiro do que quebrou.</p>
             </div>
         </div>
 
-        <div class="faq-item">
-            <button class="faq-pergunta">Como posso sugerir melhorias para o espaço físico da escola?</button>
-            <div class="faq-resposta">
-                <p>As sugestões podem ser encaminhadas diretamente via Grêmio Estudantil ou depositadas nas caixas de ouvidoria localizadas na secretaria da instituição.</p>
+        <div class="faq-box">
+            <button class="faq-btn">Tive uma ideia muito massa para melhorar o pátio, com quem falo?</button>
+            <div class="faq-content">
+                <p>Procura a galera do Grêmio Estudantil ou deixa um bilhete na caixa de sugestões da secretaria. Ideias dos alunos para melhorar a escola são sempre bem-vindas!</p>
             </div>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 Portal de Consciência Escolar. Todos os direitos reservados.</p>
-        <p>Construindo um futuro melhor através da preservação e do respeito mútuo.</p>
+        <p>© 2026 Consciência Escolar. Criado para inspirar os estudantes a liderarem pelo exemplo. ⚡</p>
     </footer>
 
     <script>
-        // 1. Interação do FAQ (Acordeon)
-        const perguntas = document.querySelectorAll('.faq-pergunta');
+        // JS 1: FAQ Sanfona
+        const botoesFaq = document.querySelectorAll('.faq-btn');
 
-        perguntas.forEach(pergunta => {
-            pergunta.addEventListener('click', () => {
-                const item = pergunta.parentElement;
-                const resposta = item.querySelector('.faq-resposta');
+        botoesFaq.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const box = btn.parentElement;
+                const conteudo = box.querySelector('.faq-content');
                 
-                // Fecha outros itens se abertos
-                document.querySelectorAll('.faq-item').forEach(outroItem => {
-                    if (outroItem !== item) {
-                        outroItem.classList.remove('ativo');
-                        outroItem.querySelector('.faq-resposta').style.maxHeight = null;
+                // Fecha as outras caixas para ficar limpo
+                document.querySelectorAll('.faq-box').forEach(outraBox => {
+                    if (outraBox !== box) {
+                        outraBox.classList.remove('aberto');
+                        outraBox.querySelector('.faq-content').style.maxHeight = null;
                     }
                 });
 
-                // Alterna o item atual
-                item.classList.toggle('ativo');
-                if (item.classList.contains('ativo')) {
-                    resposta.style.maxHeight = resposta.scrollHeight + "px";
+                // Abre ou fecha a atual
+                box.classList.toggle('aberto');
+                if (box.classList.contains('aberto')) {
+                    conteudo.style.maxHeight = conteudo.scrollHeight + "px";
                 } else {
-                    resposta.style.maxHeight = null;
+                    conteudo.style.maxHeight = null;
                 }
             });
         });
 
-        // 2. Interação do Painel de Compromisso (Checklist + Barra de Progresso)
-        const checkboxes = document.querySelectorAll('.compromisso-check');
-        const barraProgresso = document.getElementById('barra-progresso');
-        const textoProgresso = document.getElementById('texto-progresso');
+        // JS 2: Barra de Progresso do Desafio
+        const checks = document.querySelectorAll('.check-meta');
+        const barra = document.getElementById('progresso-atual');
+        const textoStatus = document.getElementById('status-texto');
 
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', () => {
-                const total = checkboxes.length;
-                const marcados = document.querySelectorAll('.compromisso-check:checked').length;
-                const porcentagem = Math.round((marcados / total) * 100);
+        checks.forEach(check => {
+            check.addEventListener('change', () => {
+                const marcados = document.querySelectorAll('.check-meta:checked').length;
+                const total = checks.length;
+                const pct = Math.round((marcados / total) * 100);
 
-                // Atualiza visualmente a barra e o texto
-                barraProgresso.style.width = porcentagem + '%';
-                textoProgresso.innerText = porcentagem + '% Concluído';
+                barra.style.width = pct + '%';
+                textoStatus.innerText = pct + '% Pronto';
 
-                // Efeito extra: se chegar a 100%, dá um brilho diferenciado
-                if (porcentagem === 100) {
-                    textoProgresso.innerText = "100% - Parabéns! Você é um Cidadão Nota 10! 🚀";
-                    textoProgresso.style.color = "#00e5ff";
+                if (pct === 100) {
+                    textoStatus.innerText = "💥 100% - Você é oficialmente um Estudante Nota 10!";
+                    textoStatus.style.color = "#00e5ff";
                 } else {
-                    textoProgresso.style.color = "#00b3ff";
+                    textoStatus.style.color = "#00b3ff";
                 }
             });
         });
